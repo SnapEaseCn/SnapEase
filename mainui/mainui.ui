@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainUI</class>
+ <widget class="QWidget" name="MainUI">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>234</width>
+    <height>49</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainui</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse.qrc">
+    <normaloff>:/ico/icon/logo.png</normaloff>:/ico/icon/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenu
+{
+ background-color:rgb(17,28,27);
+ border: 1px solid rgb(38,224,213);
+ color:white;
+}
+QMenu::item
+{
+ background-color:rgb(17,28,27);
+ color:white;
+}
+QMenu::item:selected
+{
+ background-color:rgb(16,42,57);
+ color:white;
+}
+QMenu::separator
+{
+ height: 1px;
+ background-color:rgb(32,174,171);
+ margin-left: 5px;
+ margin-right:5px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" colspan="2">
+    <widget class="QFrame" name="frameTop">
+     <property name="styleSheet">
+      <string notr="true">QToolButton
+{
+	border:none;
+}
+
+QToolButton:hover
+{
+	border:1px solid rgb(255,255,255);
+}
+QFrame
+{
+	border-left:1px solid rgb(9,89,81);
+	border-right:1px solid rgb(9,89,81);
+	border-top:1px solid rgb(9,89,81);
+	border-bottom:none;
+	background-color: rgb(11,43,40);
+}
+QLabel
+{
+	border:none;
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="tbIcon">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton
+{
+	border-image: url(:/ico/icon/logo.png);
+ 	background-color: transparent;
+ 	border: none;
+}
+
+QToolButton:pressed
+{
+	border-image: url(:/ico/icon/logo.png);
+ 	background-color: transparent;
+ 	border: none;
+}
+
+QToolButton:hover
+{
+	border-image: url(:/ico/icon/logo.png);
+ 	background-color: transparent;
+ 	border: none;
+ }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelTitle">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding-left:4px;</string>
+        </property>
+        <property name="text">
+         <string>SnapEase</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="light">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbMin">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/min.png</normaloff>:/ico/icon/min.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbClose">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/close.png</normaloff>:/ico/icon/close.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QFrame" name="frameBottom">
+     <property name="styleSheet">
+      <string notr="true">QFrame
+{
+	background-color: rgb(17,28,27);
+	border:1px solid rgb(9,89,81);
+}
+
+QToolButton
+{
+  color: rgb(103,159,153); 
+  /*background-color: rgb(16,42,57);*/
+  background-color:none;
+  border:1px solid rgb(17,28,27);
+}
+
+QToolButton:hover 
+{
+  color: rgb(103,159,153); 
+  background-color: rgb(16,42,57);
+  border:1px solid rgb(38,226,214);
+}
+
+QToolButton:pressed
+{
+  color: rgb(103,159,153); 
+  background-color: rgb(16,42,57);
+ }
+
+QToolButton::menu-indicator 
+{
+  image: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>8</number>
+      </property>
+      <property name="leftMargin">
+       <number>4</number>
+      </property>
+      <property name="topMargin">
+       <number>4</number>
+      </property>
+      <property name="rightMargin">
+       <number>4</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="tbOpen">
+        <property name="toolTip">
+         <string>打开图像</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/openfile.png</normaloff>:/ico/icon/openfile.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbCaptureRegion">
+        <property name="toolTip">
+         <string>矩形截图</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/cropimg.png</normaloff>:/ico/icon/cropimg.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbCaptureFullScreen">
+        <property name="toolTip">
+         <string>全屏截图</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/screen.png</normaloff>:/ico/icon/screen.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbPickColor">
+        <property name="toolTip">
+         <string>拾取颜色</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/pickclr.png</normaloff>:/ico/icon/pickclr.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbColor">
+        <property name="toolTip">
+         <string>配色生成</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/colortb.png</normaloff>:/ico/icon/colortb.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbZoom">
+        <property name="toolTip">
+         <string>放大镜</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/glass.png</normaloff>:/ico/icon/glass.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbTextVoice">
+        <property name="toolTip">
+         <string>文本转语音</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/voice.png</normaloff>:/ico/icon/voice.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tbMoreOperation">
+        <property name="toolTip">
+         <string>更多功能</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse.qrc">
+          <normaloff>:/ico/icon/mtlist.png</normaloff>:/ico/icon/mtlist.png</iconset>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::InstantPopup</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
